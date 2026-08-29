@@ -1,0 +1,26 @@
+{
+  "name": "reachinbox-email-scheduler",
+  "version": "1.0.0",
+  "description": "ReachInbox full-stack email job scheduler - Outbox Labs intern assignment",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:worker": "cd backend && npm run worker",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "cd backend && npm run test",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "prisma:migrate": "cd backend && npx prisma migrate dev",
+    "prisma:generate": "cd backend && npx prisma generate"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
